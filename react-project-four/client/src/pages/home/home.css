@@ -1,0 +1,74 @@
+/* Home.css */
+
+.post {
+  background-color: rgb(181, 205, 218);
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-title{
+  margin-left: 5px;
+}
+
+.image {
+  height: 200px;
+  background-color: #6c757d;
+  
+}
+
+.card.h-100{
+  background: none;
+  border: none;
+}
+.card-text{
+  height: 100px;
+  border-bottom: 1px solid #000;
+}
+
+.animalBody{
+  background-color: aliceblue;
+  border-radius: 5px;
+
+}
+
+.body {
+  cursor: pointer;
+  background-color: #dee2e6;
+  height: 100px;
+  
+}
+
+.footer {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.username a {
+  text-decoration: none;
+}
+
+.likeBttn {
+  cursor: pointer;
+  font-size: 18px;
+  color: #9595cb;
+}
+
+.unlikeBttn {
+  cursor: pointer;
+  font-size: 18px;
+  color: #4e30c4;
+}
+
+.post .buttons label {
+  font-size: 16px;
+  margin-left: 5px;
+}

@@ -1,0 +1,31 @@
+/* landingPage.css */
+.landing-page-img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.landing-page-img-container {
+    margin-top: -30px;
+    max-width: 50%; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+.containerLandingBottom {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  
+.half-width {
+    flex: 1;
+    text-align: center; 
+}
+.headingLanding {
+    margin-top: 40px; /* Adjust the margin top here */
+}
+  
+.registerButton{
+    padding-top: 20px;
+}

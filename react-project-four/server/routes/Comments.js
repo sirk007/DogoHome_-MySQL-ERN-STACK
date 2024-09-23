@@ -1,0 +1,38 @@
+// Import the Express.js framework
+const express = require('express');
+// Create a new router using the Express Router() function
+const router = express.Router();
+// Import the Comments.js model from '../models' directory
+const { Comments } = require('../models');
+const {validateToken} = require('../middlewares/AuthMiddleware');
+
+router.get('/:postId', async (req, res) =>{
+    const postId = req.params.postId;
+    const comments = await Comments.findAll({ where: {
+        PostId: postId
+    }});
+    res.json(comments);
+});
+
+
+router.post("/", validateToken, async (req, res) => {
+    const comment = req.body;
+    const username = req.user.username;
+    comment.username = username;
+    await Comments.create(comment);
+    res.json(comment);
+  });
+
+router.delete("/:commentId", validateToken, async (req, res) =>{
+    const commentId = req.params.commentId
+
+    await Comments.destroy({where: {
+        id: commentId,
+    },
+    });
+
+    res.json("Comment Removed");
+
+});
+
+module.exports = router;

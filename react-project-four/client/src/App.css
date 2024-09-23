@@ -1,0 +1,126 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*background-color: #2c2c2c;
+  background-image: url('/img/bg6.jpg'); 
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center;
+}
+
+
+* { 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+/* 
+<a href="https://www.freepik.com/free-vector/dark-gradient-background-with-copy-space_14731307.htm#fromView=search&page=11&position=51&uuid=23eb3740-209e-4c27-b1c5-06bb04a43725">Image by rawpixel.com on Freepik</a>
+<a href="https://www.freepik.com/free-photo/abstract-bright-green-square-pixel-tile-mosaic-wall-background-texture_18487545.htm#from_view=detail_alsolike">Image by benzoix on Freepik</a>
+<a href="https://www.freepik.com/free-photo/colored-ceramic-stones-abstract-smooth-brown-mosiac-texture-abstract-ceramic-mosaic-adorned-building-abstract-seamless-pattern_18486169.htm#from_view=detail_alsolike">Image by benzoix on Freepik</a>
+<a href="https://www.freepik.com/free-photo/abstract-metallic-background-with-hexagonal-design_3634257.htm#fromView=search&page=5&position=38&uuid=ea2077ec-f43a-4ac8-93e9-6b1657010c32">Image by kjpargeter on Freepik</a>
+<a href="https://www.freepik.com/free-vector/geometric-cube-seamless-pattern_17666680.htm#fromView=search&page=3&position=28&uuid=ea2077ec-f43a-4ac8-93e9-6b1657010c32">Image by exnico on Freepik</a>
+<a href="https://www.freepik.com/free-vector/background-made-octagons_899590.htm#page=3&query=repeating%20background&position=4&from_view=keyword&track=ais&uuid=f700c2f7-163e-4415-8cc9-fff857e66884">Image by alvaro_cabrera</a> on Freepik */
+body{
+  /*background: var(--color-bg)*/
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.navLinks:hover {
+  background-color: rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s ease; 
+  text-decoration: underline;
+
+  
+}
+.links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.img-icon {
+  width: 150px; 
+  height: auto; 
+}
+
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: rgb(207, 0, 0);
+}
+
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  font-weight: lighter;
+}
+
+.reglogDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.reglogDiv .dropdown-menu {
+  display: none;
+  
+}
+
+.reglogDiv .dropdown-menu.show {
+  display: block;
+  left: -65px;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.usernameBox{
+  padding-right: 10px;
+}
+
+.landingPageDiv{
+  position: absolute;
+  padding-top: 8px;
+  left: 20px;
+}
+
